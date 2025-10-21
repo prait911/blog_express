@@ -73,6 +73,18 @@ const updatePost = (req, res) => {
   });
 }
 
+const getPostById = (req, res) => {
+    const postID = parseInt(req.params.id)
+    const post = posts.find(t => t.id === postID)
+
+    if (!post){
+        res.status(404).json({message: 'Post not found'})
+    }
+    else{
+        res.status(201).json(post)
+    }
+}
+
 
 const publishPost = (req, res) => {
     const {published} = req.body;
@@ -99,5 +111,6 @@ module.exports = {
     createPost,
     updatePost,
     publishPost,
-    deletePost
+    deletePost,
+    getPostById 
 } 
