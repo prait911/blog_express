@@ -1,0 +1,20 @@
+[
+  {
+    "id": 2,
+    "title": "Second Post",
+    "content": "This is the second post.",
+    "author": "First Author",
+    "published": false,
+    "createdAt": "2025-10-25T15:02:54.810Z",
+    "updatedAt": "2025-11-06T06:49:45.369Z"
+  },
+  {
+    "title": "Updated title",
+    "content": "Updated long content with more than ten characters.",
+    "author": "David Dow",
+    "published": false,
+    "id": 3,
+    "createdAt": "2025-11-06T06:49:40.253Z",
+    "updatedAt": "2025-11-06T06:49:40.253Z"
+  }
+]
